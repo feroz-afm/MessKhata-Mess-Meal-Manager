@@ -142,3 +142,24 @@ Bazar **Tk 1,000**, **10 meals** → meal rate **Tk 100**. A gas bill of **Tk 60
 | Karim | 6 | 600 | 300 | 500 | **−400** (has to pay) |
 
 This exact case is checked automatically in the [tests](#tests).
+
+## Project structure
+
+```text
+src/main/java/com/messkhata
+├── Main.java                  starts the app
+├── model/                     data classes (Person, Member, Manager, Transaction, Deposit, Expense, ...)
+├── data/FileDatabase.java     backend storage: one text file per table
+├── service/
+│   ├── MessService.java       rules, validation and calculations
+│   ├── MessException.java     readable error messages
+│   └── SampleData.java        demo data for the first run
+└── ui/
+    ├── theme/Theme.java       colours, fonts, table styling
+    ├── components/            custom-painted widgets: cards, buttons, sidebar, chart, logo
+    ├── LoginFrame.java
+    ├── MainFrame.java         sidebar, month switcher, page switching
+    └── panels/                one class per page, all extend BasePanel
+src/test/java/.../MessServiceTest.java   calculation tests
+run.bat / run.sh                         build and start with only the JDK
+```
