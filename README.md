@@ -22,3 +22,12 @@ Daily meal chart, bazar and shared bills, deposits, and an automatic month-end s
 [Run options](#run-options) · [A month in MessKhata](#a-month-in-messkhata) · [Calculations](#how-the-money-is-calculated) ·
 [Structure](#project-structure) · [OOP](#oop-concepts-used) · [Data files](#data-files) · [Tests](#tests) ·
 [FAQ](#faq) · [Roadmap](#roadmap)
+
+## Why this project
+
+In almost every Bangladeshi student mess one person acts as the manager. They count meals on a paper chart,
+collect advance money, note every bazar, and at the end of the month sit down with a calculator to find the
+meal rate and who owes whom. Mistakes and arguments are common.
+
+**MessKhata does that bookkeeping.** The manager enters meals, bazar and deposits during the month, and the app
+calculates the meal rate and every member's balance instantly.
