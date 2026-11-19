@@ -12,6 +12,7 @@ import com.messkhata.ui.panels.DepositPanel;
 import com.messkhata.ui.panels.ExpensePanel;
 import com.messkhata.ui.panels.MealChartPanel;
 import com.messkhata.ui.panels.MembersPanel;
+import com.messkhata.ui.panels.ReportPanel;
 import com.messkhata.ui.theme.Theme;
 
 import javax.swing.BorderFactory;
@@ -72,6 +73,7 @@ public class MainFrame extends JFrame {
         addPage("Meal chart", "ML", new MealChartPanel(this));
         addPage("Bazar & bills", "BZ", new ExpensePanel(this));
         addPage("Deposits", "DP", new DepositPanel(this));
+        addPage("Monthly report", "RP", new ReportPanel(this));
 
         JPanel root = new JPanel(new BorderLayout());
         root.add(buildSidebar(), BorderLayout.WEST);
