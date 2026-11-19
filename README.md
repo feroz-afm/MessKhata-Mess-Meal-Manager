@@ -175,3 +175,15 @@ flowchart LR
 ```
 The **UI** only talks to **MessService**, MessService applies the rules and does the maths, and
 **FileDatabase** reads and writes the files.
+
+## OOP concepts used
+
+| Concept | Where to find it |
+|---|---|
+| Encapsulation | Private fields with getters and setters in every model class |
+| Inheritance | `Member`, `Manager` extend `Person`; `Deposit`, `Expense` extend `Transaction`; every page extends `BasePanel` |
+| Abstraction | `Person`, `Transaction` and `BasePanel` are abstract classes |
+| Interface | `Storable`, implemented by every class that is saved to a file |
+| Polymorphism | Recent activity calls `getType()`, `getDescription()`, `isIncome()` on a `List<Transaction>` |
+| Exception handling | `MessException` for rule violations, `IOException` for file problems |
+| Enum and collections | `ExpenseCategory`; `ArrayList`, `HashMap`, `LinkedHashMap` |
