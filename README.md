@@ -15,3 +15,10 @@ Daily meal chart, bazar and shared bills, deposits, and an automatic month-end s
 ![Dashboard](docs/screenshots/dashboard.png)
 
 </div>
+
+## Contents
+
+[Why](#why-this-project) · [Features](#features) · [Screenshots](#screenshots) · [Quick start](#quick-start) ·
+[Run options](#run-options) · [A month in MessKhata](#a-month-in-messkhata) · [Calculations](#how-the-money-is-calculated) ·
+[Structure](#project-structure) · [OOP](#oop-concepts-used) · [Data files](#data-files) · [Tests](#tests) ·
+[FAQ](#faq) · [Roadmap](#roadmap)
