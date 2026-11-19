@@ -222,3 +222,12 @@ java -cp test-out com.messkhata.service.MessServiceTest
 **Can two managers use it?** — not yet; one `admin` account for now (see roadmap).
 
 **Where is my exported report?** — in `mess_data/report_YYYY-MM.txt`; the app also shows the full path.
+
+## Roadmap
+
+- [x] Meal chart, bazar & bills, deposits, monthly report
+- [x] Calculation tests and CI build
+- [ ] Change password and multiple manager accounts
+- [ ] MySQL / SQLite storage option
+- [ ] Export the report as PDF
+- [ ] Bangla language option
