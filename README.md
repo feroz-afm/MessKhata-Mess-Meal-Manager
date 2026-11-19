@@ -163,3 +163,15 @@ src/main/java/com/messkhata
 src/test/java/.../MessServiceTest.java   calculation tests
 run.bat / run.sh                         build and start with only the JDK
 ```
+
+### Architecture
+
+```mermaid
+flowchart LR
+    UI[Swing UI<br/>LoginFrame · MainFrame · panels] --> S[MessService<br/>rules & calculations]
+    S --> DB[FileDatabase]
+    DB --> F[(mess_data/*.txt)]
+    S --> M[Model classes]
+```
+The **UI** only talks to **MessService**, MessService applies the rules and does the maths, and
+**FileDatabase** reads and writes the files.
