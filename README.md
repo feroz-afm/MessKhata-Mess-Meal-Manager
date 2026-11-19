@@ -231,3 +231,15 @@ java -cp test-out com.messkhata.service.MessServiceTest
 - [ ] MySQL / SQLite storage option
 - [ ] Export the report as PDF
 - [ ] Bangla language option
+
+## Contributing
+
+Ideas and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the [changelog](CHANGELOG.md).
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+## Author
+
+**Md Feroz Ahmed** — CSE, Pundra University of Science & Technology · [GitHub](https://github.com/feroz-afm)
