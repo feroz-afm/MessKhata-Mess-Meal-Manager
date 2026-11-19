@@ -31,3 +31,18 @@ meal rate and who owes whom. Mistakes and arguments are common.
 
 **MessKhata does that bookkeeping.** The manager enters meals, bazar and deposits during the month, and the app
 calculates the meal rate and every member's balance instantly.
+
+## Features
+
+| Page | What you can do |
+|---|---|
+| 🔐 **Login** | Sign in as the mess manager |
+| 📊 **Dashboard** | Meal rate, total meals, bazar cost, cash in hand, meals-per-day chart, recent activity |
+| 👥 **Members** | Add, edit, search, mark as left; members with history are protected from deletion |
+| 🍛 **Meal chart** | Member × day grid like the paper chart, half meals, one-click fill, today and Fridays highlighted |
+| 🛒 **Bazar & bills** | Bazar shared by meals eaten; cook, gas, Wi-Fi shared equally; "paid from own pocket" credits a deposit |
+| 💰 **Deposits** | Advance money per member with running totals |
+| 📄 **Monthly report** | Who gets money back and who has to pay, exportable as `.txt` |
+| 📅 **Any month** | Switch to previous or next months from the top bar |
+
+Data is saved automatically in plain text files, so **no database setup** is needed.
