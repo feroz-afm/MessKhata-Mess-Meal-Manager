@@ -46,3 +46,17 @@ calculates the meal rate and every member's balance instantly.
 | 📅 **Any month** | Switch to previous or next months from the top bar |
 
 Data is saved automatically in plain text files, so **no database setup** is needed.
+
+## Screenshots
+
+| Meal chart | Monthly report |
+|---|---|
+| ![Meal chart](docs/screenshots/meal-chart.png) | ![Monthly report](docs/screenshots/monthly-report.png) |
+
+| Bazar & bills | Deposits |
+|---|---|
+| ![Bazar and bills](docs/screenshots/bazar-bills.png) | ![Deposits](docs/screenshots/deposits.png) |
+
+| Login | Members |
+|---|---|
+| ![Login](docs/screenshots/login.png) | ![Members](docs/screenshots/members.png) |
