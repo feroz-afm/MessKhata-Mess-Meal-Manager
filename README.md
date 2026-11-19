@@ -187,3 +187,18 @@ The **UI** only talks to **MessService**, MessService applies the rules and does
 | Polymorphism | Recent activity calls `getType()`, `getDescription()`, `isIncome()` on a `List<Transaction>` |
 | Exception handling | `MessException` for rule violations, `IOException` for file problems |
 | Enum and collections | `ExpenseCategory`; `ArrayList`, `HashMap`, `LinkedHashMap` |
+
+## Data files
+
+Everything is stored in `mess_data/` as plain text, one record per line, fields separated by `|`:
+
+| File | Contents |
+|---|---|
+| `members.txt` | id, name, phone, room, join date, active |
+| `managers.txt` | login accounts |
+| `deposits.txt` | id, date, member, amount, note |
+| `expenses.txt` | id, date, paid by, category, amount, details |
+| `meals_YYYY-MM.txt` | one line per member with the meals of each day |
+| `report_YYYY-MM.txt` | created when a report is exported |
+
+**Backup:** copy the `mess_data/` folder.
