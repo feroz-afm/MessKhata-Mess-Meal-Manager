@@ -111,3 +111,11 @@ java -cp out com.messkhata.Main
 On the first run the app creates a `mess_data/` folder with one month of sample data
 (5 members with meals, bazar, bills and deposits) so every screen has something to show.
 Delete that folder to start with an empty mess.
+
+## A month in MessKhata
+
+1. **Start of month** — add new members, record everyone's advance in **Deposits**.
+2. **Every day** — fill the **Meal chart** (use *fill all* and fix the few who skipped).
+3. **After each bazar** — add it in **Bazar & bills**; tick *paid from own pocket* if a member paid.
+4. **When a bill comes** — add cook, gas, Wi-Fi as a shared bill.
+5. **Month end** — open **Monthly report**, export the `.txt` and share it in the mess group.
