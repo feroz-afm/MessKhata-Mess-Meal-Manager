@@ -119,3 +119,15 @@ Delete that folder to start with an empty mess.
 3. **After each bazar** — add it in **Bazar & bills**; tick *paid from own pocket* if a member paid.
 4. **When a bill comes** — add cook, gas, Wi-Fi as a shared bill.
 5. **Month end** — open **Monthly report**, export the `.txt` and share it in the mess group.
+
+## How the money is calculated
+
+```text
+Meal rate        = total bazar / total meals
+Meal cost        = member's meals x meal rate
+Shared bill each = total shared bills / members sharing that month
+Balance          = deposit - (meal cost + shared bill each)
+
+Balance > 0  ->  the member will get money back
+Balance < 0  ->  the member has to pay
+```
