@@ -106,8 +106,13 @@ public abstract class BasePanel extends JPanel {
         return s;
     }
 
+    /** Sets the picker to today (or day 1) only when the month changes, so a chosen day is kept. */
     protected void resetDay(JSpinner s) {
         YearMonth m = month();
+        if (m.equals(s.getClientProperty("month"))) {
+            return;
+        }
+        s.putClientProperty("month", m);
         int max = m.lengthOfMonth();
         int day = YearMonth.now().equals(m) ? LocalDate.now().getDayOfMonth() : 1;
         s.setModel(new SpinnerNumberModel(day, 1, max, 1));
