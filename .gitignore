@@ -1,0 +1,21 @@
+# build output
+target/
+out/
+*.class
+
+# app data created on first run
+mess_data/
+
+# IDE files
+nbproject/private/
+nbactions.xml
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
