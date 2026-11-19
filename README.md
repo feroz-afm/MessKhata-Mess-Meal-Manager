@@ -75,3 +75,29 @@ cd MessKhata-Mess-Meal-Manager
 | double-click **`run.bat`** | `./run.sh` |
 
 No Git? Click **Code > Download ZIP** on GitHub and unzip it.
+
+## Run options
+
+**NetBeans (recommended):** **File > Open Project**, choose the folder (Maven icon), then **Run** (`F6`).
+The first build needs internet once so Maven can download its plugins.
+
+**IntelliJ IDEA:** **File > Open** → `pom.xml` → **Open as Project**, then run `com.messkhata.Main`.
+
+**Maven:**
+```bash
+mvn package
+java -jar target/MessKhata-1.0.jar
+```
+
+**JDK only (manual):**
+```bash
+javac -encoding UTF-8 -d out $(find src/main/java -name "*.java")
+java -cp out com.messkhata.Main
+```
+```powershell
+javac -encoding UTF-8 -d out (Get-ChildItem -Recurse -Filter *.java src\main\java).FullName
+java -cp out com.messkhata.Main
+```
+
+**Ready-made jar:** every push builds `MessKhata-1.0.jar` — download it from the latest
+[Build run](https://github.com/feroz-afm/MessKhata-Mess-Meal-Manager/actions/workflows/build.yml) under *Artifacts*.
