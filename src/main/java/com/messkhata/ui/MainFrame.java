@@ -8,6 +8,7 @@ import com.messkhata.ui.components.RoundedPanel;
 import com.messkhata.ui.components.SidebarButton;
 import com.messkhata.ui.panels.BasePanel;
 import com.messkhata.ui.panels.DashboardPanel;
+import com.messkhata.ui.panels.MealChartPanel;
 import com.messkhata.ui.panels.MembersPanel;
 import com.messkhata.ui.theme.Theme;
 
@@ -66,6 +67,7 @@ public class MainFrame extends JFrame {
         pageHolder.setOpaque(false);
         addPage("Dashboard", "DB", new DashboardPanel(this));
         addPage("Members", "MB", new MembersPanel(this));
+        addPage("Meal chart", "ML", new MealChartPanel(this));
 
         JPanel root = new JPanel(new BorderLayout());
         root.add(buildSidebar(), BorderLayout.WEST);
