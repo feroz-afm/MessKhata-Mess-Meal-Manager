@@ -51,6 +51,9 @@ public class MessService {
             managers.add(new Manager("A001", "Mess Manager", "01700000000", "admin", "1234"));
             db.writeAll(MANAGERS, managers);
         }
+        if (firstRun) {
+            SampleData.fill(this);
+        }
     }
 
     private void load() throws IOException {
