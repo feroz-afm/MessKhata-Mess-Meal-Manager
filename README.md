@@ -202,3 +202,13 @@ Everything is stored in `mess_data/` as plain text, one record per line, fields 
 | `report_YYYY-MM.txt` | created when a report is exported |
 
 **Backup:** copy the `mess_data/` folder.
+
+## Tests
+
+`MessServiceTest` checks the meal rate, shared bills, balances, "paid from own pocket", input validation and
+login — without any test library. GitHub Actions runs it on every push.
+
+```bash
+javac -encoding UTF-8 -d test-out $(find src/main/java src/test/java -name "*.java")
+java -cp test-out com.messkhata.service.MessServiceTest
+```
