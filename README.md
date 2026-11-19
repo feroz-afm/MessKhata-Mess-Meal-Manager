@@ -212,3 +212,13 @@ login — without any test library. GitHub Actions runs it on every push.
 javac -encoding UTF-8 -d test-out $(find src/main/java src/test/java -name "*.java")
 java -cp test-out com.messkhata.service.MessServiceTest
 ```
+
+## FAQ
+
+**`javac` is not recognized** — install a JDK (not only a JRE) and add its `bin` folder to `PATH`.
+
+**I want to start fresh** — close the app and delete the `mess_data/` folder.
+
+**Can two managers use it?** — not yet; one `admin` account for now (see roadmap).
+
+**Where is my exported report?** — in `mess_data/report_YYYY-MM.txt`; the app also shows the full path.
