@@ -60,3 +60,18 @@ Data is saved automatically in plain text files, so **no database setup** is nee
 | Login | Members |
 |---|---|
 | ![Login](docs/screenshots/login.png) | ![Members](docs/screenshots/members.png) |
+
+## Quick start
+
+You only need **JDK 11 or newer** (check with `java -version`).
+
+```bash
+git clone https://github.com/feroz-afm/MessKhata-Mess-Meal-Manager.git
+cd MessKhata-Mess-Meal-Manager
+```
+
+| Windows | Linux / macOS |
+|---|---|
+| double-click **`run.bat`** | `./run.sh` |
+
+No Git? Click **Code > Download ZIP** on GitHub and unzip it.
