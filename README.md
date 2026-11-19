@@ -101,3 +101,13 @@ java -cp out com.messkhata.Main
 
 **Ready-made jar:** every push builds `MessKhata-1.0.jar` — download it from the latest
 [Build run](https://github.com/feroz-afm/MessKhata-Mess-Meal-Manager/actions/workflows/build.yml) under *Artifacts*.
+
+## Sign in
+
+| Username | Password |
+|---|---|
+| `admin` | `1234` |
+
+On the first run the app creates a `mess_data/` folder with one month of sample data
+(5 members with meals, bazar, bills and deposits) so every screen has something to show.
+Delete that folder to start with an empty mess.
