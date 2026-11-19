@@ -131,3 +131,14 @@ Balance          = deposit - (meal cost + shared bill each)
 Balance > 0  ->  the member will get money back
 Balance < 0  ->  the member has to pay
 ```
+
+### Example
+
+Bazar **Tk 1,000**, **10 meals** → meal rate **Tk 100**. A gas bill of **Tk 600** is shared by 2 members.
+
+| Member | Meals | Meal cost | Shared | Deposit | Balance |
+|---|---:|---:|---:|---:|---:|
+| Rahim | 4 | 400 | 300 | 1,000 | **+300** (gets back) |
+| Karim | 6 | 600 | 300 | 500 | **−400** (has to pay) |
+
+This exact case is checked automatically in the [tests](#tests).
